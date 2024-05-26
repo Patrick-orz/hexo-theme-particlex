@@ -9,6 +9,13 @@
             </span>
             <%= date(page.date, "YYYY/M/D") %>
         </span>
+        <span class="updated">
+            <span class="icon">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </span>
+            最后更新于
+            <%- date(page.updated, "YYYY/M/D") %>
+        </span>
         <% if (page.categories && page.categories.data.length !== 0) { %>
         <span class="category">
             <a href="<%- url_for(page.categories.data[0].path) %>">
@@ -39,6 +46,13 @@
             <% }); %>
         </span>
         <% } %>
+        <span class="views">
+            <span class="icon">
+                <i class="fa-solid fa-eye"></i>
+            </span>
+
+            <span class="waline-pageview-count"></span>
+        </span>
     </div>
     <% if (theme.crypto.enable && typeof page.secret !== "undefined") { %>
     <% const CryptoJS = getCryptoJS(); %>
