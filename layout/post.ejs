@@ -9,6 +9,13 @@
             </span>
             <%= date(page.date, "YYYY/M/D") %>
         </span>
+        <span class="updated">
+            <span class="icon">
+                <i class="fa-solid fa-pen-to-square"></i>
+                Last updated by
+                <%- date(page.updated, "YYYY/M/D") %>
+            </span>
+        </span>
         <% if (page.categories && page.categories.data.length !== 0) { %>
         <span class="category">
             <a href="<%- url_for(page.categories.data[0].path) %>">
@@ -39,6 +46,13 @@
             <% }); %>
         </span>
         <% } %>
+        <span class="views">
+            <span class="icon">
+                <i class="fa-solid fa-eye"></i>
+            </span>
+
+            <span class="waline-pageview-count"></span>
+        </span>
     </div>
     <% if (theme.crypto.enable && typeof page.secret !== "undefined") { %>
     <% const CryptoJS = getCryptoJS(); %>
@@ -47,7 +61,7 @@
         :class="['input', cryptoStatus]"
         :disabled="cryptoStatus === 'success'"
         ref="crypto"
-        placeholder="文章被加密，请输入密码"
+        placeholder="Post encrypted, please enter password"
         data-encrypted="<%- CryptoJS.AES.encrypt(page.content, page.secret).toString() %>"
         data-shasum="<%- CryptoJS.SHA256(page.content).toString() %>"
         v-model="crypto"
