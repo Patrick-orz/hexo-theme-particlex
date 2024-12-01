@@ -1,6 +1,6 @@
 <% if (page.toc != false) { %>
     <div id="toc">
-        <strong class="sidebar-title">目录</strong>
+        <h1 class="toc-toggler" onclick="toggleToc()">目录 <span class="arrow">&#9654;</span></h1>
         <%- toc(page.content, {
             class: theme.toc.class,
             max_depth: theme.toc.max_depth,
