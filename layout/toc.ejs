@@ -1,0 +1,11 @@
+<% if (page.toc != false) { %>
+    <div id="toc">
+        <h1 class="toc-toggler" onclick="toggleToc()">Table of Content<i class="fa-solid fa-caret-up toc-arrow"></i></h1>
+        <%- toc(page.content, {
+            class: theme.toc.class,
+            max_depth: theme.toc.max_depth,
+            min_depth: theme.toc.min_depth,
+            list_number: theme.toc.list_number,
+        }) %>
+    </div>
+<% } %>

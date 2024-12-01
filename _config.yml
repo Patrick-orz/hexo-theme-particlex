@@ -95,6 +95,17 @@ highlight:
     enable: true
     style: github
 
+# Custom toc from https://github.com/theme-particlex/hexo-theme-particlex/pull/117
+toc:
+    max_depth: 6
+    min_depth: 1
+    class: toc
+    list_number: true
+
+# Custom scroll to top button in each post
+scrollTop:
+  enable: true
+
 # KaTeX math rendering
 math:
     enable: true
@@ -105,7 +116,7 @@ preview:
 
 # Article encryption
 crypto:
-    enable: true
+    enable: false
 
 # Search
 search:

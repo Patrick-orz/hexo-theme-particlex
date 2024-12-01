@@ -1,3 +1,6 @@
+html {
+ scroll-behavior: smooth;
+}
 #archives {
     margin: auto;
     margin-top: 100px;
@@ -460,6 +463,58 @@
 #search-bar {
     margin-bottom: 50px;
     z-index: 1000;
+}
+#scrollTop-container {
+    cursor: pointer;
+    position: fixed;
+    padding: 1.5em;
+    right: 0;
+    bottom: 0;
+
+    transition: opacity 0.3s ease, visibility 0s 0.3s, color 0.2s ease;
+}
+#scrollTop-container:hover {
+    color: darkgrey;
+}
+.toc-arrow {
+    display: inline-block;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease, color 0.2s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+.toc-arrow.show {
+    transform: rotate(180deg);
+}
+.toc-toggler {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.2s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+.toc-toggler:hover {
+    opacity: 0.7;
+}
+.toc {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    max-height: 0;
+}
+.toc.show {
+    opacity: 1;
+}
+#toc {
+    font-size: 15px;
+}
+#toc .toc {
+    padding: 0;
+    font-size: 20px;
+}
+#toc li , .toc li {
+    list-style-type: none;
+}
+#toc ol {
+    margin: 0;
+}
+#toc .toc-child {
+    padding-left: 1.5em;
 }
 #timeline-wrap {
     display: flex;
