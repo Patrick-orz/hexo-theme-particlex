@@ -1,3 +1,6 @@
+html {
+ scroll-behavior: smooth;
+}
 #archives {
     margin: auto;
     margin-top: 100px;
@@ -482,6 +485,7 @@
     transform: rotate(180deg);
 }
 .toc-toggler {
+    display: inline-block;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.2s ease, transform 0.3s ease, opacity 0.3s ease;
 }
