@@ -1,0 +1,11 @@
+<% if (page.toc != false) { %>
+    <div id="toc">
+        <strong class="sidebar-title">目录</strong>
+        <%- toc(page.content, {
+            class: theme.toc.class,
+            max_depth: theme.toc.max_depth,
+            min_depth: theme.toc.min_depth,
+            list_number: theme.toc.list_number,
+        }) %>
+    </div>
+<% } %>
