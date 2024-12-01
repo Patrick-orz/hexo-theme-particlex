@@ -1,6 +1,6 @@
 <% if (page.toc != false) { %>
     <div id="toc">
-        <h1 class="toc-toggler" onclick="toggleToc()">目录 <span class="arrow">&#9654;</span></h1>
+        <h1 class="toc-toggler" onclick="toggleToc()">目录<i class="fa-solid fa-caret-up toc-arrow"></i></h1>
         <%- toc(page.content, {
             class: theme.toc.class,
             max_depth: theme.toc.max_depth,

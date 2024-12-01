@@ -106,6 +106,10 @@ toc:
     #     position: after
     #     symbol: h3
 
+# Custom scroll to top button in each post
+scrollTop:
+  enable: true
+
 # KaTeX math rendering
 math:
     enable: true
