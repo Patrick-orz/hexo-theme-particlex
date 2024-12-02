@@ -100,11 +100,7 @@ toc:
     max_depth: 6
     min_depth: 1
     class: toc
-    # decodeEntities: false
     list_number: true
-    # anchor:
-    #     position: after
-    #     symbol: h3
 
 # Custom scroll to top button in each post
 scrollTop:
