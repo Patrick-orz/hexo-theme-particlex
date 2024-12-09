@@ -71,8 +71,8 @@
         <div class="content" ref="content" v-show="cryptoStatus === 'success'"></div>
     </transition>
     <% } else { %>
-    <div class="content" v-pre>
-        <%- partial('toc') %>
+    <%- partial('toc') %>
+    <div class="content" v-pre id="main-content">
         <%- page.content %>
     </div>
     <% } %>
