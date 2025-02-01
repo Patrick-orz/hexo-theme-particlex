@@ -17,6 +17,14 @@
                 <%- date(page.updated, "YYYY/M/D") %>
             </span>
         </span>
+        <span class="wordcount">
+			<span class="icon">
+				<i class="fa-solid fa-hashtag"></i>
+				约
+				<%= wordcount(page.content) %>
+				字
+			</span>
+        </span>
         <% if (page.categories && page.categories.data.length !== 0) { %>
         <span class="category">
             <a href="<%- url_for(page.categories.data[0].path) %>">
