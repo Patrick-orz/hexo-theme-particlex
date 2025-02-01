@@ -47,6 +47,10 @@ menu:
         name: tags
         theme: solid
         link: /tags
+    "公告":
+        name: sign-hanging
+        theme: solid
+        link: /news
     English:
       name: globe
       theme: solid
