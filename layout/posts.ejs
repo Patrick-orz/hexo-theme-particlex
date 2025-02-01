@@ -53,6 +53,17 @@ background-position: center center;"
             </mark>
         </span>
 
+        <span class="wordcount">
+            <mark style="background-color: white;">
+                <span class="icon">
+                    <i class="fa-solid fa-hashtag"></i>
+					约
+					<%= wordcount(post.content) %>
+					字
+                </span>
+            </mark>
+        </span>
+
         <% if (theme.crypto.enable && typeof post.secret !== "undefined") { %>
         <span class="special">
             <mark style="background-color: white;">
