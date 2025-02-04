@@ -1147,23 +1147,36 @@ ol li {
 }
 .in-progress-text {
 	/*color: rgba(100, 181, 255, 1);*/
-	color: rgb(244, 215, 147);
+	/*color: rgb(244, 215, 147);*/
+	/*color: rgb(255, 180, 162);*/
+	color: rgb(161, 227, 249);
 }
 .in-progress-bg {
 	/*background-color: rgba(100, 181, 255, 0.6);*/
-	background-color: rgb(244, 215, 147);
+	/*background-color: rgb(244, 215, 147);*/
+	/*background-color: rgb(255, 180, 162);*/
+	/*background-color: rgb(240, 168, 208);*/
+	/*background-color: rgb(87, 143, 202);*/
+	background-color: rgb(161, 227, 249);
 }
 .planned-text {
 	/*color: rgba(220, 220, 220, 1);*/
 	/*color: rgb(254, 250, 224);*/
 	/*color: rgb(229, 225, 218);*/
-	color: rgb(250, 237, 206);
+	/*color: rgb(250, 237, 206);*/
+	/*color: rgb(255, 205, 178);*/
+	color: rgb(203, 220, 235);
 }
 .planned-bg {
 	/*background-color: rgba(220, 220, 220, 0.6);*/
 	/*background-color: rgb(254, 250, 224);*/
 	/*background-color: rgb(229, 225, 218);*/
-	background-color: rgb(250, 237, 206);
+	/*background-color: rgb(250, 237, 206);*/
+	/*background-color: rgba(255, 205, 178, 0.5);*/
+	/*background-color: rgb(255, 198, 198);*/
+	/*background-color: rgb(209, 248, 239);*/
+	/*background-color: rgb(161, 227, 249);*/
+	background-color: rgb(203, 220, 235);
 }
 
 /* None: https://colorhunt.co/palette/ccd5aee0e5b6faedcefefae0 */
