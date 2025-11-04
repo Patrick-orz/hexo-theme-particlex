@@ -35,10 +35,10 @@ menu:
         name: id-card
         theme: solid
         link: /about
-    "成就":
-        name: star
-        theme: solid
-        link: /achievements
+    # "成就":
+    #     name: star
+    #     theme: solid
+    #     link: /achievements
     "归档":
         name: box-archive
         theme: solid
